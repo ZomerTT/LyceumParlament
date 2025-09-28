@@ -244,3 +244,35 @@ footer {
   margin-top: 5px;
 }
 
+/* --- Адаптивність хедера --- */
+@media (max-width: 768px) {
+  nav ul {
+    gap: 0.8rem; /* зменшений відступ */
+  }
+
+  nav a {
+    font-size: 0.9rem; /* трохи менший текст */
+    padding: 0.4rem 0.6rem; /* компактніші кнопки */
+  }
+}
+
+@media (max-width: 500px) {
+  nav {
+    flex-wrap: wrap; /* дозволяє перенос кнопок */
+    justify-content: center;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  nav a {
+    font-size: 0.85rem;
+    padding: 0.3rem 0.5rem;
+  }
+}
+
+
